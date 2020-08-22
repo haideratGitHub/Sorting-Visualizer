@@ -53,15 +53,121 @@ def drawCircle(algorithm):
     if algorithm == 1:
         # indicates selection sort is selected
         pygame.draw.circle(WIN, AQUA, (20, 20), 7, 7)
-        # deselect others if any
+        # deselecting
+        # insertion sort
         pygame.draw.circle(WIN, BLACK, (20, 40), 7, 7)
         pygame.draw.circle(WIN, WHITE, (20, 40), 7, 1)
+        # bubble sort
+        pygame.draw.circle(WIN, BLACK, (140, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 20), 7, 1)
+        # quick sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 40), 7, 1)
+        # merge sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 20), 7, 1)
+        # heap sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 40), 7, 1)
     elif algorithm == 2:
         # indicates insertion sort is selected
         pygame.draw.circle(WIN, AQUA, (20, 40), 7, 7)
-        # deselect others if any
+        # deselecting
+        # selection sort circle
         pygame.draw.circle(WIN, BLACK, (20, 20), 7, 7)
         pygame.draw.circle(WIN, WHITE, (20, 20), 7, 1)
+        # bubble sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 20), 7, 1)
+        # quick sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 40), 7, 1)
+        # merge sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 20), 7, 1)
+        # heap sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 40), 7, 1)
+    elif algorithm == 3:
+        # indicates bubble sort is selected
+        pygame.draw.circle(WIN, AQUA, (140, 20), 7, 7)
+
+        # deselecting
+        # selection sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 20), 7, 1)
+        # insertion sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 40), 7, 1)
+        # quick sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 40), 7, 1)
+        # merge sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 20), 7, 1)
+        # heap sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 40), 7, 1)
+    elif algorithm == 4:
+        # indicates quick sort is selected
+        pygame.draw.circle(WIN, AQUA, (140, 40), 7, 7)
+
+        # deselecting
+        # selection sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 20), 7, 1)
+        # insertion sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 40), 7, 1)
+        # bubble sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 20), 7, 1)
+        # merge sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 20), 7, 1)
+        # heap sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 40), 7, 1)
+    elif algorithm == 5:
+        # indicates merge sort is selected
+        pygame.draw.circle(WIN, AQUA, (260, 20), 7, 7)
+
+        # deselecting
+        # selection sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 20), 7, 1)
+        # insertion sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 40), 7, 1)
+        # bubble sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 20), 7, 1)
+        # quick sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 40), 7, 1)
+        # heap sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 40), 7, 1)
+    elif algorithm == 6:
+        # indicates heap sort is selected
+        pygame.draw.circle(WIN, AQUA, (260, 40), 7, 7)
+
+        # deselecting
+        # selection sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 20), 7, 1)
+        # insertion sort circle
+        pygame.draw.circle(WIN, BLACK, (20, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (20, 40), 7, 1)
+        # bubble sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 20), 7, 1)
+        # quick sort circle
+        pygame.draw.circle(WIN, BLACK, (140, 40), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (140, 40), 7, 1)
+        # merge sort circle
+        pygame.draw.circle(WIN, BLACK, (260, 20), 7, 7)
+        pygame.draw.circle(WIN, WHITE, (260, 20), 7, 1)
     else:
         # selection sort
         pygame.draw.circle(WIN, (255, 255, 255), (20, 20), 7, 1)
@@ -72,6 +178,26 @@ def drawCircle(algorithm):
         pygame.draw.circle(WIN, (255, 255, 255), (20, 40), 7, 1)
         text = georgia16.render("insertion sort", True, WHITE)
         WIN.blit(text, (30, 30))
+
+        # bubble sort
+        pygame.draw.circle(WIN, (255, 255, 255), (140, 20), 7, 1)
+        text = georgia16.render("bubble sort", True, WHITE)
+        WIN.blit(text, (150, 10))
+
+        # quick sort
+        pygame.draw.circle(WIN, (255, 255, 255), (140, 40), 7, 1)
+        text = georgia16.render("quick sort", True, WHITE)
+        WIN.blit(text, (150, 30))
+
+        # merge sort
+        pygame.draw.circle(WIN, WHITE, (260, 20), 7, 1)
+        text = georgia16.render("merge sort", True, WHITE)
+        WIN.blit(text, (270, 10))
+
+        # heap sort
+        pygame.draw.circle(WIN, WHITE, (260, 40), 7, 1)
+        text = georgia16.render("heap sort", True, WHITE)
+        WIN.blit(text, (270, 30))
 
 
 # this method will check which sort is clicked by mouse
@@ -85,8 +211,21 @@ def checkMouseClick():
     # check for insertion sort coordinates
     if ((20 - 7) < x < (20 + 7)) and ((40 - 7) < y < (40 + 7)):
         algorithm = 2
+    # check for bubble sort coordinate
+    if ((140 - 7) < x < (140 + 7)) and ((20 - 7) < y < (20 + 7)):
+        algorithm = 3
+    # check quick sort coordinates
+    if ((140 - 7) < x < (140 + 7)) and ((40 - 7) < y < (40 + 7)):
+        algorithm = 4
+    # check for merge sort coordinates
+    if ((260 - 7) < x < (260 + 7)) and ((20 - 7) < y < (20 + 7)):
+        algorithm = 5
+    # check for heap sort coordinates
+    if ((260 - 7) < x < (260 + 7)) and ((40 - 7) < y < (40 + 7)):
+        algorithm = 6
 
 
+# algorithm = 1
 def selectionSort(height):
     # here we need to sort of height array
     # minimum = YELLOW
@@ -125,7 +264,28 @@ def selectionSort(height):
         pygame.draw.line(WIN, RED, (10 + (i * 5), 600), (10 + (i * 5), height[i]))
 
 
+# algorithm = 2
 def insertionSort(height):
+    return 0
+
+
+# algorithm = 3
+def bubbleSort(height):
+    return 0
+
+
+# algorithm = 4
+def quickSort(height):
+    return 0
+
+
+# algorithm = 5
+def mergeSort(height):
+    return 0
+
+
+# algorithm = 6
+def heapSort(height):
     return 0
 
 
@@ -140,7 +300,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         if event.type == BLINK_EVENT:
-            startSorting(COLORS[k % 7])
+            # startSorting(COLORS[k % 7])
             k += 1
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
@@ -149,6 +309,14 @@ while running:
                     selectionSort(height)
                 if algorithm == 2:
                     insertionSort(height)
+                if algorithm == 3:
+                    bubbleSort(height)
+                if algorithm == 4:
+                    quickSort(height)
+                if algorithm == 5:
+                    mergeSort(height)
+                if algorithm == 6:
+                    heapSort(height)
                 sorted = True
         if event.type == pygame.MOUSEBUTTONUP:
             checkMouseClick()
