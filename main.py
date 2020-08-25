@@ -229,7 +229,7 @@ def checkMouseClick():
 def selectionSort(height):
     # here we need to sort of height array
     # minimum = YELLOW
-    # comparing = MAGENTA
+    # comparing = GREEN
     # sorted part = RED
     size = len(height)
     k = 0
@@ -241,7 +241,7 @@ def selectionSort(height):
         index = 0
         for j in range(i + 1, len(height)):
             pygame.draw.line(WIN, GREEN, (10 + (j * 5), 600),
-                             (10 + (j * 5), height[j]))  # give element to be compared magenta color
+                             (10 + (j * 5), height[j]))  # give element to be compared green color
             pygame.display.update()
             if height[j] > minimum:
                 # pygame.draw.line(WIN, BLUE, (10 + (i*5), 600), (10 + (i*5), height[i]))  # restore old minimum color
@@ -266,7 +266,42 @@ def selectionSort(height):
 
 # algorithm = 2
 def insertionSort(height):
-    return 0
+    # minimum = YELLOW
+    # comparing = GREEN
+    # sorted part = RED
+
+    pygame.draw.line(WIN, RED, (10, 600), (10, height[0]))  # current sorted part
+    for i in range(1, len(height)):
+        val = height[i]
+        pygame.draw.line(WIN, YELLOW, (10 + (i * 5), 600), (10 + (i * 5), height[i]))  # value to be placed
+        j = i - 1
+        index = -1  # where val needs to be placed
+        while j >= 0:
+            pygame.draw.line(WIN, GREEN, (10 + (j * 5), 600), (10 + (j * 5), height[j]))
+            pygame.display.update()
+            if height[j] < val:
+                temp = height[j]
+                height[j] = height[j + 1]
+                height[j + 1] = temp
+                pygame.draw.line(WIN, BLACK, (10 + (j * 5), 600), (10 + (j * 5), 50))
+                pygame.draw.line(WIN, RED, (10 + (j * 5), 600), (10 + (j * 5), height[j]))
+                pygame.draw.line(WIN, BLACK, (10 + ((j + 1) * 5), 600), (10 + ((j + 1) * 5), 50))
+                pygame.draw.line(WIN, RED, (10 + ((j + 1) * 5), 600), (10 + ((j + 1) * 5), height[j + 1]))
+                pygame.display.update()
+                j = j - 1
+            else:
+                pygame.draw.line(WIN, BLACK, (10 + (j * 5), 600), (10 + (j * 5), 50))
+                pygame.draw.line(WIN, RED, (10 + (j * 5), 600), (10 + (j * 5), height[j]))
+                pygame.draw.line(WIN, BLACK, (10 + (i * 5), 600), (10 + (i * 5), 50))
+                pygame.draw.line(WIN, RED, (10 + (i * 5), 600), (10 + (i * 5), height[i]))
+                pygame.display.update()
+                j = j - 1
+        if index is not -1:
+            height[j + 1] = val
+            pygame.draw.line(WIN, BLACK, (10 + ((j + 1) * 5), 600), (10 + ((j + 1) * 5), 50))
+            pygame.draw.line(WIN, RED, (10 + ((j + 1) * 5), 600), (10 + ((j + 1) * 5), height[j + 1]))
+            pygame.draw.line(WIN, BLACK, (10 + (i * 5), 600), (10 + (i * 5), 50))
+            pygame.display.update()
 
 
 # algorithm = 3
@@ -289,7 +324,8 @@ def heapSort(height):
     return 0
 
 
-# print(height)
+h = [2, 7, 1, 4, 3, 5]
+print(height)
 sorted = False
 # 0 for nothing, 1 for selection sort
 algorithm = 0
@@ -326,4 +362,4 @@ while running:
     i += 5
     pygame.display.update()
 
-# print(height)
+print(height)
